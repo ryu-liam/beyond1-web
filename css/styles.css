@@ -7,7 +7,7 @@ ul {
 }
 
 .navbar-brand {
-  color: #00A7E1;
+  color: #00A7E1 !important;
 }
 
 .card i {
