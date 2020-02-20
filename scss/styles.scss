@@ -1,0 +1,81 @@
+@import "variables";
+
+@mixin mq {
+  @media screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin mq-md {
+  @media screen and (max-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+body{
+  color: $gray;
+}
+ul{
+  list-style: none;
+}
+.navbar-brand{
+  color: $skyblue;
+}
+.card{
+  i{
+  color: $orange;
+}
+}
+.card-title{
+  color: $orange;
+}
+.card-body{
+  a{
+  background-color: $orange;
+  border: none;
+  }}
+.max-bg{
+  margin: 0 calc(50% - 50vw);
+}
+.hero2{
+  background-color: rgba(249, 232, 167, 0.25);
+}
+img{
+  max-width: 85%;
+}
+footer{
+  color: white;
+  background: $skyblue;
+  h3{
+    border-bottom: 0.08em solid white;
+  }
+  span{
+    display: block;
+    font-size: 0.8em;
+  }
+}
+//css4iphone
+  @include mq {
+    .navbar-toggler{
+      position: fixed;
+      right: 20px;
+      z-index: 100;
+    }
+    .wrapper{
+      max-width: 90%;
+      margin: auto;
+    }
+     .hero{
+      text-align: center;
+       margin-top: 40px;
+       h1{
+         font-size: 3rem;
+         line-height: 1.3em;
+         margin-bottom: 10px;
+       }
+       p{
+         font-size: 1.7rem;
+         font-weight: lighter;
+       }
+       }
+    }

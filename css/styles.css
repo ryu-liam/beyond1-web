@@ -6,6 +6,10 @@ ul {
   list-style: none;
 }
 
+.navbar-brand {
+  color: #00A7E1;
+}
+
 .card i {
   color: #EF881A;
 }
