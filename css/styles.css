@@ -6,8 +6,9 @@ ul {
   list-style: none;
 }
 
-.navbar-brand {
-  color: #00A7E1 !important;
+#navbar-brand {
+  color: #00A7E1;
+  font-weight: bold;
 }
 
 .card i {
