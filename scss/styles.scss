@@ -12,71 +12,92 @@
   }
 }
 
-body{
+body {
   color: $gray;
 }
-ul{
+
+ul {
   list-style: none;
 }
-#navbar-brand{
+
+#navbar-brand {
   color: $skyblue;
   font-weight: bold;
+  font-size: larger;
 }
-.card{
-  i{
-  color: $orange;
-}
-}
-.card-title{
-  color: $orange;
-}
-.card-body{
-  a{
-  background-color: $orange;
+
+.card {
   border: none;
-  }}
-.max-bg{
+  box-shadow: 3px 6px 17px 0px rgba(0, 0, 0, 0.39);
+
+  i {
+    color: $orange;
+  }
+}
+
+.card-title {
+  color: $orange;
+}
+
+.card-body {
+  a {
+    background-color: $orange;
+    border: none;
+  }
+}
+
+.max-bg {
   margin: 0 calc(50% - 50vw);
 }
-.hero2{
+
+.hero2 {
   background-color: rgba(249, 232, 167, 0.25);
 }
-img{
+
+img {
   max-width: 85%;
 }
-footer{
+
+footer {
   color: white;
   background: $skyblue;
-  h3{
+
+  h3 {
     border-bottom: 0.08em solid white;
   }
-  span{
+
+  span {
     display: block;
     font-size: 0.8em;
   }
 }
+
 //css4iphone
-  @include mq {
-    .navbar-toggler{
-      position: fixed;
-      right: 20px;
-      z-index: 100;
+@include mq {
+  .navbar-toggler {
+    position: fixed;
+    right: 20px;
+    z-index: 100;
+  }
+
+  .wrapper {
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .hero {
+    text-align: center;
+    margin-top: 40px;
+
+    h1 {
+      font-size: 3rem;
+      line-height: 1.3em;
+      margin-bottom: 10px;
     }
-    .wrapper{
-      max-width: 90%;
-      margin: auto;
+
+    p {
+      font-size: 1.7rem;
+      font-weight: lighter;
     }
-     .hero{
-      text-align: center;
-       margin-top: 40px;
-       h1{
-         font-size: 3rem;
-         line-height: 1.3em;
-         margin-bottom: 10px;
-       }
-       p{
-         font-size: 1.7rem;
-         font-weight: lighter;
-       }
-       }
-    }
+  }
+}

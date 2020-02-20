@@ -7,20 +7,27 @@ ul {
 }
 
 #navbar-brand {
-  color: #00a7e1;
+  color: #00A7E1;
   font-weight: bold;
+  font-size: larger;
+}
+
+.card {
+  border: none;
+  -webkit-box-shadow: 3px 6px 17px 0px rgba(0, 0, 0, 0.39);
+          box-shadow: 3px 6px 17px 0px rgba(0, 0, 0, 0.39);
 }
 
 .card i {
-  color: #ef881a;
+  color: #EF881A;
 }
 
 .card-title {
-  color: #ef881a;
+  color: #EF881A;
 }
 
 .card-body a {
-  background-color: #ef881a;
+  background-color: #EF881A;
   border: none;
 }
 
@@ -38,7 +45,7 @@ img {
 
 footer {
   color: white;
-  background: #00a7e1;
+  background: #00A7E1;
 }
 
 footer h3 {
