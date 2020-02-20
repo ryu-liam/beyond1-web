@@ -7,20 +7,20 @@ ul {
 }
 
 #navbar-brand {
-  color: #00A7E1;
+  color: #00a7e1;
   font-weight: bold;
 }
 
 .card i {
-  color: #EF881A;
+  color: #ef881a;
 }
 
 .card-title {
-  color: #EF881A;
+  color: #ef881a;
 }
 
 .card-body a {
-  background-color: #EF881A;
+  background-color: #ef881a;
   border: none;
 }
 
@@ -38,7 +38,7 @@ img {
 
 footer {
   color: white;
-  background: #00A7E1;
+  background: #00a7e1;
 }
 
 footer h3 {
