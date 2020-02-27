@@ -1,136 +1,14 @@
-@import "variables";
-
-@mixin mq {
-  @media screen and (max-width: $breakpoint) {
-    @content;
-  }
-}
-
-@mixin mq-md {
-  @media screen and (max-width: $breakpoint-md) {
-    @content;
-  }
-}
-
-body {
-  color: $gray;
-}
-
-nav {
-  ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    align-items: center;
-  }
-}
-
-#navbar-brand {
-  color: $skyblue;
-  font-weight: bold;
-  font-size: larger;
-}
-
-.card {
-  border: none;
-  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
-
-  i {
-    color: $orange;
-  }
-}
-
-.card-title {
-  color: $orange;
-}
-
-.card-body {
-  a {
-    background-color: $orange;
-    border: none;
-  }
-}
-
-.max-bg {
-  margin: 0 calc(50% - 50vw);
-}
-
-.hero2 {
-  background-color: rgba(249, 232, 167, 0.25);
-}
-
-img {
-  max-width: 85%;
-}
-
-footer {
-  color: white;
-  background: $skyblue;
-
-  h3 {
-    border-bottom: 0.08em solid white;
-  }
-
-  span {
-    display: block;
-    font-size: 0.8em;
-  }
-}
-
-//css4iphone
-@include mq {
-  .wrapper {
-    max-width: 90%;
-    margin: auto;
-  }
-
-  .hero {
-    text-align: center;
-    margin-top: 40px;
-
-    h1 {
-      font-size: 3rem;
-      line-height: 1.3em;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 1.7rem;
-      font-weight: lighter;
-    }
-  }
-}
-
 @media screen and (max-width:780px) {
 
-  /**/
-  header {
-    height: 70px;
-    border-bottom: 1.3px solid gray;
-    width: 100vw;
-    z-index: 50;
-  }
-
-  .menu {
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    z-index: 100;
-  }
-
   .nav-tgl {
-    display: flex;
-    justify-content: center;
+    display: inline-block;
     cursor: pointer;
     position: fixed;
     z-index: 100;
-    right: 4vw;
-    top: 1.3vh;
-    width: 14vw;
-    height: 14vw;
-    max-width: 70px;
-    max-height: 70px;
+    right: 30px;
+    top: 30px;
+    width: 70px;
+    height: 70px;
     border: none;
     border-radius: 50%;
     padding: 0;
@@ -180,6 +58,12 @@ footer {
     &:focus {
       outline: none
     }
+
+    &:hover>span:after,
+    &:hover>span:before {
+      width: 34px;
+      left: 0;
+    }
   }
 
   // for the nav background (styling the nav itself is not our topic)
@@ -228,38 +112,27 @@ footer {
       }
     }
 
-    nav {
+    .nav {
       ul {
         visibility: visible;
-        height: 100vh;
-        width: 100%;
       }
     }
   }
 
   nav {
-    display: none;
-
     ul {
+      margin: 0;
       padding: 0;
       list-style-type: none;
+      height: 100vh;
       visibility: hidden;
+      display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
-
-      li:first-child {
-        display: none;
-      }
-
-      li {
-        z-index: 100;
-
-        a {
-          color: #fff;
-          padding-bottom: 4px;
-          border-bottom: 1px solid #36D6CA;
-        }
+      li{
+        z-index:100;
+        color:#fff;
       }
     }
   }
@@ -267,10 +140,6 @@ footer {
 
 @media screen and (min-width:780px) {
   .nav-tgl {
-    display: none;
-  }
-
-  #brand4s {
     display: none;
   }
 }
